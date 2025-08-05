@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhonePe Style UI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+    }
+
+    /* Top Banner */
+    .banner {
+      background-color: #3a006a;
+      color: white;
+      padding: 20px 16px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      text-align: center;
+    }
+
+    .banner .offer {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .banner h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .banner .pay-btn {
+      margin-top: 14px;
+      background-color: white;
+      color: #3a006a;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* Section Container */
+    .section {
+      padding: 20px 16px 10px;
+    }
+
+    .section h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .icon-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .icon-box {
+      flex: 1;
+      background-color: #f2f2f2;
+      padding: 15px 5px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .icon-box img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 6px;
+    }
+
+    /* Recharge Section */
+    .recharge-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .recharge-box {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 15px 5px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 14px;
+      min-width: 80px;
+    }
+
+    .fee-tag {
+      font-size: 10px;
+      color: red;
+      font-weight: bold;
+    }
+
+    .cards-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .card {
+      flex: 1;
+      background-color: #f2f2f2;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .card h4 {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: #555;
+    }
+
+    /* Bottom Nav */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid #ccc;
+      padding: 8px 0;
+      z-index: 100;
+    }
+
+    .nav-item {
+      text-align: center;
+      font-size: 12px;
+      color: #444;
+    }
+
+    .nav-item.active {
+      color: #7a00c0;
+      font-weight: bold;
+    }
+
+    .nav-item span {
+      display: block;
+      font-size: 20px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  
+  <div class="banner">
+    <div class="offer">0.85% fee* on big spends with Credit Card</div>
+    <h2>Tuition Fee, Rent and more</h2>
+    <button class="pay-btn">Pay Now →</button>
+  </div>
+
+  
+  <div class="section">
+    <h3>Money Transfers</h3>
+    <div class="icon-row">
+      <div class="icon-box">
+        📱<br>To Mobile Number
+      </div>
+      <div class="icon-box">
+        🏦<br>To Bank & Self A/c
+      </div>
+      <div class="icon-box">
+        💰<br>Check Balance
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <h3>Recharge & Bills <span style="float:right; font-size:12px; color:purple;">View All</span></h3>
+    <div class="recharge-row">
+      <div class="recharge-box">🔋<br>Recharge</div>
+      <div class="recharge-box">
+        📚<br>Tuition Fees<br><span class="fee-tag">0.85%* fee</span>
+      </div>
+      <div class="recharge-box">💡<br>Electricity</div>
+      <div class="recharge-box">🏦<br>Loan EMI</div>
+    </div>
+  </div>
+
+ 
+  <div class="section">
+    <div class="cards-row">
+      <div class="card">
+        <h4>Loans</h4>
+        <p>Personal, Gold and more</p>
+      </div>
+      <div class="card">
+        <h4>Insurance <span style="color: purple;">Offer</span></h4>
+        <p>Vehicle, Health, etc.</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="bottom-nav">
+    <div class="nav-item active">
+      <span>🏠</span>
+      Home
+    </div>
+    <div class="nav-item">
+      <span>🔍</span>
+      Search
+    </div>
+    <div class="nav-item">
+      <span>📷</span>
+      Scan
+    </div>
+    <div class="nav-item">
+      <span>🔔</span>
+      Alerts
+    </div>
+    <div class="nav-item">
+      <span>🕒</span>
+      History
+    </div>
+  </div>
+
+</body>
+</html>
